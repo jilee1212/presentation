@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FandomRobotics 블록체인 솔루션</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/presentation.css">
+</head>
+<body>
+
+    <!-- 떠다니는 배경 Shape들 -->
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+
+    <!-- Slides Container -->
+    <div id="presentation-container">
+        <!-- Slide 1: Hero -->
+        <div class="slide active hero-bg text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600">
+                FandomRobotics
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-gray-600">
+                블록체인 솔루션 맞춤 견적서
+            </p>
+             <button id="start-journey-btn" class="glow-button bg-purple-600 hover:bg-purple-500 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg">
+                아이템 견적 확인하러 가보기 <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+
+        <!-- Slide 2: CEX -->
+        <div class="slide service-slide">
+            <div class="card main-card rounded-2xl p-6 md:p-8 max-w-2xl w-full">
+                <div class="text-center mb-4">
+                    <i class="fas fa-chess-rook text-5xl md:text-6xl text-purple-400"></i>
+                    <h2 class="text-2xl md:text-3xl font-bold mt-4 text-amber-900">중앙화거래소 (CEX)</h2>
+                    <p class="text-amber-700 font-semibold text-lg md:text-xl">"든든한 요새"</p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-bold text-amber-900 text-lg mb-3">💪 주요 강점</h3>
+                    <ul class="space-y-3 text-amber-800 text-sm md:text-base">
+                        <li class="flex items-start"><i class="fas fa-shield-halved text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">올인원 플랫폼:</strong> 현물, 선물, 마진, 파생상품 등 모든 거래 지원</span></li>
+                        <li class="flex items-start"><i class="fas fa-network-wired text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">4개 네트워크 지원:</strong> ETH, BSC, TRX, 폴리곤 멀티체인</span></li>
+                        <li class="flex items-start"><i class="fas fa-coins text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">수익 다각화:</strong> 스테이킹, 런치패드, OTC</span></li>
+                        <li class="flex items-start"><i class="fas fa-user-graduate text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">초보자도 안심:</strong> 리스크 없는 데모 트레이딩</span></li>
+                        <li class="flex items-start"><i class="fas fa-robot text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">자동화 수익:</strong> 카피트레이딩 및 내부 마켓메이킹 봇</span></li>
+                        <li class="flex items-start"><i class="fas fa-chart-line text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">고급 분석 도구:</strong> 실시간 차트, 기술적 분석, 시장 인사이트</span></li>
+                        <li class="flex items-start"><i class="fas fa-mobile-alt text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">모바일 최적화:</strong> iOS/Android 앱으로 언제 어디서나 거래</span></li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-bold text-amber-900 text-lg mb-3">🔧 기술 스펙</h3>
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">보안:</strong> 멀티시그, 콜드스토리지, 2FA
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">성능:</strong> 초당 100만 거래 처리
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">API:</strong> RESTful, WebSocket 실시간
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">지원:</strong> 24/7 다국어 고객지원
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-amber-200 pt-4">
+                     <dl class="grid grid-cols-2 gap-4 text-center">
+                        <div>
+                            <dt class="font-bold text-amber-900 text-lg">개발비</dt>
+                            <dd class="text-amber-700 text-sm md:text-base">700,000 USDT<br>(약 10억원)</dd>
+                        </div>
+                        <div>
+                            <dt class="font-bold text-amber-900 text-lg">개발납기</dt>
+                            <dd class="text-amber-700 text-sm md:text-base">60 working days<br>(약 3개월)</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" style="transition-delay: 0.6s;">
+                    <div class="image-placeholder"><i class="fas fa-globe text-4xl"></i></div>
+                    <h3 class="font-bold text-lg mt-4 mb-3 text-amber-900">Global Crypto Union</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>유저 수:</strong></span>
+                            <span class="text-amber-800 font-semibold">100만 명+</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>일일 거래량:</strong></span>
+                            <span class="text-amber-800 font-semibold">$5B+</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>지원 코인:</strong></span>
+                            <span class="text-amber-800 font-semibold">200+</span>
+                        </div>
+                        <div class="mt-3 p-2 bg-amber-50 rounded text-xs text-amber-800">
+                            <strong>특징:</strong> 고급 차트, 법정화폐 연동, 모바일 앱
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" style="transition-delay: 0.8s;">
+                    <div class="image-placeholder"><i class="fas fa-shield-alt text-4xl"></i></div>
+                    <h3 class="font-bold text-lg mt-4 mb-3 text-amber-900">SecureTrade Pro</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>보안 등급:</strong></span>
+                            <span class="text-amber-800 font-semibold">기관급</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>라이선스:</strong></span>
+                            <span class="text-amber-800 font-semibold">5개국</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>API 지연:</strong></span>
+                            <span class="text-amber-800 font-semibold">&lt;10ms</span>
+                        </div>
+                        <div class="mt-3 p-2 bg-amber-50 rounded text-xs text-amber-800">
+                            <strong>특징:</strong> 저지연 API, 24/7 지원, 멀티시그
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: DEX -->
+        <div class="slide service-slide">
+             <div class="card main-card rounded-2xl p-6 md:p-8 max-w-2xl w-full">
+                <div class="text-center mb-4">
+                    <i class="fas fa-tree text-5xl md:text-6xl text-green-400"></i>
+                    <h2 class="text-2xl md:text-3xl font-bold mt-4 text-amber-900">탈중앙화거래소 (DEX)</h2>
+                    <p class="text-amber-700 font-semibold text-lg md:text-xl">"자유로운 숲 속 시장"</p>
+                </div>
+                 <div class="mb-4">
+                    <h3 class="font-bold text-amber-900 text-lg mb-3">💪 주요 강점</h3>
+                    <ul class="space-y-3 text-amber-800 text-sm md:text-base">
+                        <li class="flex items-start"><i class="fas fa-layer-group text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">멀티체인 지원:</strong> ETH, BSC 2개 네트워크 동시 운영</span></li>
+                        <li class="flex items-start"><i class="fas fa-chart-line text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">선물거래:</strong> 최대 50x 레버리지, 크로스/아이솔레이트 마진</span></li>
+                        <li class="flex items-start"><i class="fas fa-hand-holding-usd text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">유동성 풀:</strong> LP 토큰 생성, 파밍, 스테이킹 수익</span></li>
+                        <li class="flex items-start"><i class="fas fa-rocket text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">런치패드:</strong> IEO를 통한 토큰 런칭 플랫폼</span></li>
+                        <li class="flex items-start"><i class="fas fa-vote-yea text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">거버넌스:</strong> 커뮤니티 투표, DAO 의사결정</span></li>
+                        <li class="flex items-start"><i class="fas fa-wallet text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">지갑 연동:</strong> MetaMask, Trust Wallet, WalletConnect</span></li>
+                        <li class="flex items-start"><i class="fas fa-shield-alt text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">고급 보안:</strong> 자동 청산, 펀딩 레이트, 오라클 연동</span></li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-bold text-amber-900 text-lg mb-3">🔧 기술 스펙</h3>
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">네트워크:</strong> ETH, BSC 멀티체인
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">레버리지:</strong> 최대 50x 선물거래
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">마진 모델:</strong> Cross/Isolated
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">오라클:</strong> Chainlink, Pyth 연동
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">스마트 컨트랙트:</strong> Solidity 최신
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">프론트엔드:</strong> React, MERN Stack
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-amber-200 pt-4">
+                     <dl class="grid grid-cols-2 gap-4 text-center">
+                        <div>
+                            <dt class="font-bold text-amber-900 text-lg">개발비</dt>
+                            <dd class="text-amber-700 text-sm md:text-base">500,000 USDT<br>(약 7억원)</dd>
+                        </div>
+                        <div>
+                            <dt class="font-bold text-amber-900 text-lg">개발납기</dt>
+                            <dd class="text-amber-700 text-sm md:text-base">30 working days<br>(약 1.5개월)</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+             <div class="portfolio-grid">
+                <div class="portfolio-card" style="transition-delay: 0.6s;">
+                    <div class="image-placeholder"><i class="fas fa-exchange-alt text-4xl"></i></div>
+                    <h3 class="font-bold text-lg mt-4 mb-3 text-amber-900">Multi-Chain DEX</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>네트워크:</strong></span>
+                            <span class="text-amber-800 font-semibold">ETH, BSC</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>지갑 지원:</strong></span>
+                            <span class="text-amber-800 font-semibold">3개</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>기능:</strong></span>
+                            <span class="text-amber-800 font-semibold">Swap, LP, Farm</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>거버넌스:</strong></span>
+                            <span class="text-amber-800 font-semibold">DAO 토큰</span>
+                        </div>
+                        <div class="mt-3 p-2 bg-amber-50 rounded text-xs text-amber-800">
+                            <strong>특징:</strong> 토큰 스왑, 유동성 풀, 파밍, 스테이킹, 런치패드
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" style="transition-delay: 0.8s;">
+                    <div class="image-placeholder"><i class="fas fa-chart-line text-4xl"></i></div>
+                    <h3 class="font-bold text-lg mt-4 mb-3 text-amber-900">Futures Trading</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>레버리지:</strong></span>
+                            <span class="text-amber-800 font-semibold">최대 50x</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>마진:</strong></span>
+                            <span class="text-amber-800 font-semibold">Cross/Isolated</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>주문 타입:</strong></span>
+                            <span class="text-amber-800 font-semibold">Market, Limit, Stop</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>펀딩:</strong></span>
+                            <span class="text-amber-800 font-semibold">8시간마다</span>
+                        </div>
+                        <div class="mt-3 p-2 bg-amber-50 rounded text-xs text-amber-800">
+                            <strong>특징:</strong> 자동 청산, 오라클 연동, 3rd party API 유동성
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 4: Wallets -->
+        <div class="slide service-slide">
+             <div class="card main-card rounded-2xl p-6 md:p-8 max-w-2xl w-full">
+                <div class="text-center mb-4">
+                    <i class="fas fa-wallet text-5xl md:text-6xl text-yellow-400"></i>
+                     <h2 class="text-2xl md:text-3xl font-bold mt-4 text-amber-900">전자지갑 솔루션</h2>
+                    <p class="text-amber-700 font-semibold text-lg md:text-xl">"보물 상자와 마법 주머니"</p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-bold text-amber-900 text-lg mb-3">💪 주요 강점</h3>
+                    <ul class="space-y-3 text-amber-800 text-sm md:text-base">
+                        <li class="flex items-start"><i class="fas fa-mobile-alt text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">Android 앱:</strong> React Native 기반 네이티브 앱</span></li>
+                        <li class="flex items-start"><i class="fas fa-coins text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">6개 코인 지원:</strong> BTC, ETH, USDT, USDC, BNB, BASE</span></li>
+                        <li class="flex items-start"><i class="fas fa-shield-halved text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">고급 보안:</strong> 6자리 패스코드, 2FA, IP 제한</span></li>
+                        <li class="flex items-start"><i class="fas fa-exchange-alt text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">스왑 기능:</strong> ChangeNow/Changelly API 연동</span></li>
+                        <li class="flex items-start"><i class="fas fa-globe text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">다국어 지원:</strong> 5개 언어 (영어, 스페인어, 한국어, 프랑스어, 중국어)</span></li>
+                        <li class="flex items-start"><i class="fas fa-cog text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">관리자 대시보드:</strong> 완전한 백엔드 관리 시스템</span></li>
+                        <li class="flex items-start"><i class="fas fa-wallet text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">지갑 생성/복구:</strong> 시드 구문, 기존 지갑 임포트</span></li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-bold text-amber-900 text-lg mb-3">🔧 기술 스펙</h3>
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">플랫폼:</strong> Android React Native
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">백엔드:</strong> Node.js, MongoDB
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">알림:</strong> Firebase 서비스
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">스왑 API:</strong> ChangeNow/Changelly
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">보안:</strong> 2FA, IP 제한, OTP
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg">
+                            <strong class="text-amber-800">배포:</strong> Play Store 등록
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-amber-200 pt-4">
+                    <h3 class="font-bold text-amber-900 text-lg mb-3 text-center">서비스 비용</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-amber-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-amber-900 text-lg mb-2">재단 전용 지갑</h4>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-amber-700"><strong>개발비:</strong></span>
+                                    <span class="text-amber-800 font-semibold">17,000 USDT<br>(약 2,500만원)</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-amber-700"><strong>개발납기:</strong></span>
+                                    <span class="text-amber-800 font-semibold">20일<br>(약 1.0개월)</span>
+                                </div>
+                                <div class="mt-2 p-2 bg-amber-100 rounded text-xs text-amber-800">
+                                    <strong>기능:</strong> 전용 코인 입금/출금/락업/스테이킹/수당지급
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-amber-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-amber-900 text-lg mb-2">멀티월렛</h4>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-amber-700"><strong>개발비:</strong></span>
+                                    <span class="text-amber-800 font-semibold">35,000 USDT<br>(약 5,000만원)</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-amber-700"><strong>개발납기:</strong></span>
+                                    <span class="text-amber-800 font-semibold">40일<br>(약 2.0개월)</span>
+                                </div>
+                                <div class="mt-2 p-2 bg-amber-100 rounded text-xs text-amber-800">
+                                    <strong>기능:</strong> 메타마스크, 트러스트월렛 같은 멀티체인 통합지원
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="portfolio-grid">
+                <div class="portfolio-card" style="transition-delay: 0.6s;">
+                    <div class="image-placeholder"><i class="fas fa-mobile-alt text-4xl"></i></div>
+                    <h3 class="font-bold text-lg mt-4 mb-3 text-amber-900">Android Wallet App</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>플랫폼:</strong></span>
+                            <span class="text-amber-800 font-semibold">Android</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>지원 코인:</strong></span>
+                            <span class="text-amber-800 font-semibold">6개</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>언어:</strong></span>
+                            <span class="text-amber-800 font-semibold">5개</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>개발 기간:</strong></span>
+                            <span class="text-amber-800 font-semibold">15일</span>
+                        </div>
+                        <div class="mt-3 p-2 bg-amber-50 rounded text-xs text-amber-800">
+                            <strong>특징:</strong> React Native, Firebase, 스왑 API
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" style="transition-delay: 0.8s;">
+                    <div class="image-placeholder"><i class="fas fa-cog text-4xl"></i></div>
+                    <h3 class="font-bold text-lg mt-4 mb-3 text-amber-900">Admin Dashboard</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>관리 기능:</strong></span>
+                            <span class="text-amber-800 font-semibold">완전한 백엔드</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>티켓 관리:</strong></span>
+                            <span class="text-amber-800 font-semibold">지원 시스템</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>수수료 설정:</strong></span>
+                            <span class="text-amber-800 font-semibold">유연한 관리</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-amber-700"><strong>언어 관리:</strong></span>
+                            <span class="text-amber-800 font-semibold">5개 언어</span>
+                        </div>
+                        <div class="mt-3 p-2 bg-amber-50 rounded text-xs text-amber-800">
+                            <strong>특징:</strong> 트랜잭션 관리, 분석, CMS
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 5: 재단 컨설팅 -->
+        <div class="slide service-slide">
+            <div class="card main-card rounded-2xl p-6 md:p-8 max-w-2xl w-full">
+                <div class="text-center mb-4">
+                    <i class="fas fa-scroll text-5xl md:text-6xl text-orange-400"></i>
+                    <h2 class="text-2xl md:text-3xl font-bold mt-4 text-amber-900">재단 컨설팅</h2>
+                    <p class="text-amber-700 font-semibold text-lg md:text-xl">"현명한 길잡이"</p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-bold text-amber-900 text-lg mb-2">💪 주요 강점</h3>
+                     <ul class="space-y-2 text-amber-800 text-sm md:text-base">
+                        <li class="flex items-start"><i class="fas fa-user-tie text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">전문성:</strong> 블록체인 전문가의 체계적인 설계</span></li>
+                        <li class="flex items-start"><i class="fas fa-box-open text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">패키지 효율:</strong> 백서부터 코인 발행까지 원스톱</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">신뢰성:</strong> 깃북, 랜딩페이지로 프로페셔널한 이미지 구축</span></li>
+                         <li class="flex items-start"><i class="fas fa-file-invoice-dollar text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">비용 투명:</strong> 고정 가격으로 예산 계획 용이</span></li>
+                        <li class="flex items-start"><i class="fas fa-trophy text-amber-600 mt-1 mr-3"></i><span><strong class="text-amber-900">성공 보장:</strong> 검증된 방법론으로 리스크 최소화</span></li>
+                    </ul>
+                </div>
+                <div class="border-t border-amber-200 pt-4">
+                    <h3 class="font-bold text-amber-900 text-lg mb-2 text-center">서비스 비용</h3>
+                    <ul class="text-sm text-amber-700 grid grid-cols-2 gap-x-4 gap-y-1">
+                        <li class="text-right"><strong>백서 제작:</strong></li><li class="text-left">500만원</li>
+                        <li class="text-right"><strong>깃북 제작:</strong></li><li class="text-left">300만원</li>
+                        <li class="text-right"><strong>랜딩페이지 제작:</strong></li><li class="text-left">250만원</li>
+                        <li class="text-right"><strong>코인 발행:</strong></li><li class="text-left">200만원</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" style="transition-delay: 0.6s;">
+                    <div class="image-placeholder"><i class="fas fa-image text-4xl"></i></div>
+                    <h3 class="font-bold text-lg mt-4 mb-2 text-amber-900">Project Chimera 백서</h3>
+                    <ul class="text-sm text-amber-700 space-y-1">
+                        <li><strong>컨설팅 범위:</strong> 토크노믹스, 기술 아키텍처</li>
+                        <li><strong>추가 제공:</strong> 시장 진출 전략, 투자자 덱</li>
+                        <li><strong>결과:</strong> 시드 투자 500만 달러 유치</li>
+                    </ul>
+                </div>
+                <div class="portfolio-card" style="transition-delay: 0.8s;">
+                    <div class="image-placeholder"><i class="fas fa-image text-4xl"></i></div>
+                    <h3 class="font-bold text-lg mt-4 mb-2 text-amber-900">MetaVerse United 론칭</h3>
+                    <ul class="text-sm text-amber-700 space-y-1">
+                        <li><strong>서비스:</strong> 풀 패키지 (백서, 깃북, 웹, 토큰)</li>
+                        <li><strong>전략:</strong> 커뮤니티 빌딩 및 마케팅</li>
+                        <li><strong>성과:</strong> 3개월 내 사용자 10만 명 확보</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Slide 6: CTA -->
+        <div class="slide text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600">
+                당신의 블록체인 모험,<br>지금 바로 시작하세요
+            </h2>
+            <p class="text-lg text-amber-800 max-w-2xl mx-auto mb-8">
+                전문가 팀이 당신의 비전을 성공적인 현실로 만들어 드립니다.
+            </p>
+            <button class="glow-button bg-green-500 hover:bg-green-400 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg">
+                전문가와 상담하기 <i class="fas fa-comments-dollar ml-2"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div id="prev-btn" class="nav-arrow left-4 md:left-8 text-2xl">
+        <i class="fas fa-chevron-left"></i>
+    </div>
+    <div id="next-btn" class="nav-arrow right-4 md:right-8 text-2xl">
+        <i class="fas fa-chevron-right"></i>
+    </div>
+
+    <script src="js/presentation.js"></script>
+</body>
+</html>
